@@ -1,0 +1,16 @@
+name = input('Please type in your name starting with the head letter and the rest of them usual ones')
+nameList = list(name)
+HeadLettersList = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
+if nameList[0] in HeadLettersList and nameList[1] not in HeadLettersList:
+	actualResult = True
+else:
+	actualResult = False
+SelfView = input('Are you sure you typed in your name right?')
+SelfViewRange = ['Yes','yes','No','no']
+print('Let\'s learn whether you measure your performance right')
+if actualResult is True and SelfView in ['Yes','yes']:
+            print('you measure your performance right')
+elif actualResult is False and SelfView in ['No', 'no']:
+            print('you measure your performance right')
+else:
+            print('Sorry, you are mistaken about your performance')
