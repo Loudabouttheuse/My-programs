@@ -1,0 +1,4 @@
+friends_names = ['Rachel','Josh','Michael','Donald']
+print('The names in the list are Rachel, Josh, Michael, Donald')
+req_name = input('Please type in the name which position in the list you would like to know')
+print(friends_names.index(req_name) + 1)
