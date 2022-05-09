@@ -1,0 +1,22 @@
+cloud_structure = input('Please choose the structure of a cloud from the following: see-through, thick')
+if cloud_structure not in ['see-through','thick']:
+	print('you typed in structure in a wrong way')
+else:
+	print('got it')
+cloud_form = input('Please choose the form of a cloud from the following: stripes, random')
+if cloud_form not in ['stripes','random']:
+	print('you typed in form in a.wrong way')
+else:
+	print('got it too')
+cloud_type = None
+if cloud_structure == 'see-through' and cloud_form == 'stripes':
+	cloud_type = 1
+elif cloud_structure == 'thick' and cloud_form == 'stripes':
+	cloud_type = 2
+elif cloud_structure == 'see-through' and cloud_form == 'random':
+	cloud_type = 3
+elif cloud_structure == 'thick' and cloud_form == 'random':
+	cloud_type = 4
+else:
+	cloud_type = None
+print(cloud_type, 'is your cloud type')
